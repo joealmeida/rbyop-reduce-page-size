@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>What if we reduced page size? - @knifir</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>What if we just reduced page size?</h3>
+					<p>Joel Almeida</h6>
+					<p>@knifir</p>
+					<p>HomeAway @ London</p>
+				</section>
+				<section data-background-color="#0067db">
+					<img src="./img/logo.svg" style="display: block; border:none; box-shadow:none; background: none; margin: 0 auto 20px;" width="500">
+					<img class="fragment fade-up" src="./img/landing-pages.png" style="width: 50vw; margin: 0 auto; display: block;">
+				</section>
+				<section>
+					<h2>Landing Pages</h2>
+					<br>
+					<h3 class="fragment fade-up">Performance</h3>
+					<h3 class="fragment fade-up">Resiliency</h3>
+					<h3 class="fragment fade-up">Delivery Speed</h3>
+				</section>
+				<section>
+					<h2>A few months forward...</h2>
+				</section>
+				<section>
+					<img src="./img/before-after.png" alt="">
+				</section>
+				<section>
+					<h2>That day...</h2>
+					<h2 class="fragment fade-up">In a pub...</h2>
+					<h2 class="fragment fade-up">After a few pints...</h2>
+				</section>
+				<section>
+					<h2>What if we just reduced page size?</h2>
+				</section>
+				<section>
+					<h2>HackAway</h2>
+					<img src="./img/hackaway.jpg" style="margin: 0 auto; display: block;">
+				</section>
+				<section>
+					<h3>Goals</h3>
+					<ul>
+						<li class="fragment fade-up"> < 50KB JS bundle size</li>
+						<li class="fragment fade-up"> < 44KB HTML (2 network trips)</li>
+						<li class="fragment fade-up"> < 0.5s first meaningful paint</li>
+						<li class="fragment fade-up"> < 1.0s time to interactive </li>
+					</ul>
+				</section>
+				<section>
+					<h3 style="text-transform: lowercase;">preact-cli</h3>
+					<p>https://github.com/developit/preact-cli</p>
+				</section>
+				<section data-background-video="./img/landingapp-next.mp4" data-background-video-muted="true" data-background-video-loop="true" data-background-size="contain">
+				</section>
+				<section>
+					<img src="./img/result.png" style="margin: 0 auto; display: block;">
+				</section>
+				<section>
+					<ul>
+						<li>~17KB JS bundle size</li>
+						<li class="fragment fade-up"> ~14KB HTML + CSS</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Questions?</h2>
+					<p>@knifir</p>
+					<p>jalmeida@homeaway.com</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
